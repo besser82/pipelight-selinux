@@ -20,7 +20,8 @@
 # THE SOFTWARE.
 
 # Here are the actual wrapped Windows-plugins.
-HOME_DIR/\.wine-pipelight[^/]*(/.*)?		gen_context(system_u:object_r:mozilla_home_t,s0)
+HOME_DIR/\.wine-pipelight(/.*)?			gen_context(system_u:object_r:mozilla_home_t,s0)
+HOME_DIR/\.wine-pipelight64(/.*)?		gen_context(system_u:object_r:mozilla_home_t,s0)
 
 # Pluginloader-wrapper needs to be of type wine_exec_t.
 /usr/share/pipelight/pluginloader[^/]*\.exe	gen_context(system_u:object_r:wine_exec_t,s0)
