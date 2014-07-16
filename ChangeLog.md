@@ -2,6 +2,10 @@ Changelog
 ---------
 
 * 2014-07-16 -- Björn Esser  <besser82@fedoraproject.org>
+  - v 0.2.1
+  - adapt the file-context rules to match the file-transition rules
+
+* 2014-07-16 -- Björn Esser  <besser82@fedoraproject.org>
   - v 0.2.0
   - add file contexts
   - adapt type enforcement rules

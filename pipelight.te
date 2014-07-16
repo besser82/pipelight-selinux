@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-module pipelight 0.2.0;
+module pipelight 0.2.1;
 
 require {
 	class dir { add_name getattr ioctl lock open read remove_name search write };
