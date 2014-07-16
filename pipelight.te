@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-module pipelight 0.1.0;
+module pipelight 0.1.1;
 
 require {
 	type configfs_t;
