@@ -22,24 +22,25 @@
 module pipelight 0.1.1;
 
 require {
+	class dir { add_name getattr ioctl lock open read remove_name search write };
+	class file { execmod execute execute_no_trans open read };
+	class lnk_file { getattr read };
 	type configfs_t;
-	type usr_t;
-	type user_home_dir_t;
+	type fonts_t;
+	type mozilla_home_t;
+	type mozilla_plugin_t;
 	type pstorefs_t;
 	type user_home_t;
-	type fonts_t;
 	type winbind_helper_exec_t;
-	type mozilla_plugin_t;
-	class file { write rename execute setattr read execmod unlink open execute_no_trans };
-	class dir { getattr create setattr rmdir };
+	type wine_exec_t;
 }
 
-#============= mozilla_plugin_t ==============
-allow mozilla_plugin_t configfs_t:dir getattr;
-allow mozilla_plugin_t fonts_t:file execute;
-allow mozilla_plugin_t pstorefs_t:dir getattr;
-allow mozilla_plugin_t user_home_dir_t:dir create;
-allow mozilla_plugin_t user_home_t:dir { rmdir setattr };
-allow mozilla_plugin_t user_home_t:file { write rename execute unlink setattr };
-allow mozilla_plugin_t usr_t:file execmod;
-allow mozilla_plugin_t winbind_helper_exec_t:file { read execute open execute_no_trans };
+# Pipelight-pluginloader permissions.
+allow mozilla_plugin_t configfs_t:dir { getattr };
+allow mozilla_plugin_t mozilla_plugin_t:file { execmod execute } ;
+allow mozilla_plugin_t pstorefs_t:dir { getattr };
+allow mozilla_plugin_t winbind_helper_exec_t:file { execute execute_no_trans open read };
+allow mozilla_plugin_t wine_exec_t:file { execmod execute };
+
+# Silverlight chokes without this.
+allow mozilla_plugin_t fonts_t:file { execute };
