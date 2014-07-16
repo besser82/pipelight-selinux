@@ -6,14 +6,6 @@ Fedora-EPEL.  Other distros using SELinux might work as well.
 
 ***
 
-Changelog
----------
-
-* 2014-07-14
-  - v 0.1.0 -- initial module
-
-***
-
 Installation
 ------------
 
@@ -25,7 +17,7 @@ For manual installation or development:
 git clone [git-repo-url] pipelight-selinux
 cd pipelight-selinux
 make -f /usr/share/selinux/devel/Makefile
-install -p -m 644 -D pipelight.pp /usr/share/selinux/packages/pipelight/pipelight.pp
+install -p -m 0644 -D pipelight.pp /usr/share/selinux/packages/pipelight/pipelight.pp
 semodule -i /usr/share/selinux/packages/pipelight/pipelight.pp
 ```
 
