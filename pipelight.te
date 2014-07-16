@@ -30,7 +30,7 @@ require {
 	type mozilla_home_t;
 	type mozilla_plugin_t;
 	type pstorefs_t;
-	type user_home_t;
+	type unconfined_t;
 	type winbind_helper_exec_t;
 	type wine_exec_t;
 }
@@ -44,3 +44,7 @@ allow mozilla_plugin_t wine_exec_t:file { execmod execute };
 
 # Silverlight chokes without this.
 allow mozilla_plugin_t fonts_t:file { execute };
+
+# Rules for $HOME file-transition.
+userdom_user_home_dir_filetrans(unconfined_t, mozilla_home_t, dir, ".wine-pipelight")
+userdom_user_home_dir_filetrans(unconfined_t, mozilla_home_t, dir, ".wine-pipelight64")
