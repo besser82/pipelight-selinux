@@ -1,6 +1,9 @@
 pipelight-selinux
 =================
 
+Description
+-----------
+
 SELinux policy-module for pipelight.  This is intended to use with Fedora or
 Fedora-EPEL.  Other distros using SELinux might work as well.
 
