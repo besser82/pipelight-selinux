@@ -2,6 +2,10 @@ Changelog
 ---------
 
 * 2015-01-25 -- Björn Esser  <besser82@fedoraproject.org>
+  - v 0.3.0
+  - add dummy selinux-interface
+
+* 2015-01-25 -- Björn Esser  <besser82@fedoraproject.org>
   - v 0.2.3
   - forgot to bump module-version
 

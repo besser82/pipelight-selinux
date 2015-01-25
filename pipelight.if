@@ -20,3 +20,5 @@
 # THE SOFTWARE.
 
 # No selinux-interfaces needed.
+
+## <summary>NPAPI Wrapper Plugin for using Windows plugins in Linux browsers.</summary>
