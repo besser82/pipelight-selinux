@@ -1,6 +1,10 @@
 Changelog
 ---------
 
+* 2015-01-25 -- Björn Esser  <besser82@fedoraproject.org>
+  - v 0.2.3
+  - forgot to bump module-version
+
 * 2015-01-09 -- Björn Esser  <besser82@fedoraproject.org>
   - v 0.2.2
   - renamed LICENSE ---> LICENSE.txt
