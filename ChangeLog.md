@@ -1,6 +1,10 @@
 Changelog
 ---------
 
+* 2015-01-29 -- Björn Esser  <besser82@fedoraproject.org>
+  - v 0.3.1
+  - relicense to GPLv2+ to match actual SELinux-license
+
 * 2015-01-25 -- Björn Esser  <besser82@fedoraproject.org>
   - v 0.3.0
   - add dummy selinux-interface

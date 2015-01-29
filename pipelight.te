@@ -15,7 +15,7 @@
 #    with this program; if not, write to the Free Software Foundation, Inc.,
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-module pipelight 0.3.0;
+module pipelight 0.3.1;
 
 require {
 	class dir { add_name getattr ioctl lock open read remove_name search write };
